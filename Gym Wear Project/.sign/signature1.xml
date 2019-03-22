@@ -4,11 +4,11 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>dtO74MDPu+HSVhLuvXB0rsrDkyZ6gAW4nS9zOwrCPRE=</DigestValue>
+<DigestValue>AKFYBvt7geqDt5gSqy2442n4TYfLJh14fC3vq8HQoto=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>QiWglWLP/WDjAyjNTaZs/sQoLefdokjpb05A9NPktwA=</DigestValue>
+<DigestValue>W0YZ5OJq3XrK08fMidycv+gRbymDQFrlVeBrvKqv9j8=</DigestValue>
 </Reference>
 <Reference URI="icon.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -23,9 +23,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-uo3H3YjQAV8miQ01hnQAMfZkXXvXPojerOvJkAvAyKBNp9zQHjuOrSzl2PdfL1X57P2yFzihUB8V
-DPtLBTAWyb34ES1TWLLbJcFXBqphS35BiN/ZFX1xuvInPB4iLdT0AA825VlBfYy5bghPe2arTmKp
-rC1SHsJbcmuWnrSmlgQ=
+hXDrBcro7bdz4r54mMcnC0HeLHr3913gOl0KQ7iCvUjACB58Oh5HDhtU8F3QdpynX9aSzMLuP9b3
+T02j7C5VBxcK+aBdzyIt4ZW6xXNAw6FFMWBLMkcyG6+uZFUyY95PWbXU66HO3Q0LlnlwAWdHf27P
+TLK2BcVcdT2maKzKQ74=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

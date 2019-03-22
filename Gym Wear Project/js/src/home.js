@@ -3,7 +3,36 @@ function initialize() {
 	let workoutArr = 
 		[
 			{
+				name: 'Arms & Triceps',
+				duration: 3600,
+				workouts: 
+					[
+					 	{
+					 		name: 'Machine Biceps Pull',
+					 		type: 'rep',
+					 		duration: 30,
+					 		rest_time: 30,
+					 		body_area: 'biceps',
+					 	},
+					 	{
+					 		name: 'Triceps Pull',
+					 		type: 'rep',
+					 		duration: 30,
+					 		rest_time: 30,
+					 		body_area: 'triceps',
+					 	},
+					 	{
+					 		name: 'Machine Biceps Pull',
+					 		type: 'rep',
+					 		duration: 30,
+					 		rest_time: 30,
+					 		body_area: 'biceps',
+					 	},
+			        ]
+			},
+			{
 				name: 'Test Workout',
+				period: '60 mins'
 			},
 			{
 				name: 'Test Workout',
@@ -18,12 +47,25 @@ function initialize() {
 	let renderWorkouts = []
 	workoutArr.forEach((data,index) => {
 		let period = data.period || ''
-		renderWorkouts.push(`<li><a href="workout.html" onclick="test(${index})"><div class="ui-marquee ui-marquee-gradient">${data.name}</div> <div class="li-text-sub ui-li-sub-text">${period}</div></a></li>`)
+		let workoutHtml = 
+			`
+				<li class="home-routines">
+					<a onclick="test(${index})">
+						<div class="home-routine-info">
+							<div class="home-routine-info-icon"/>
+								<div class="ui-marquee ui-marquee-gradient home-routines-name">${data.name}</div>
+						</div>
+						<div class="li-text-sub ui-li-sub-text">${period}</div>
+					</a>
+				</li>
+			`
+		renderWorkouts.push(workoutHtml)
 	})
 	
 	$('#snapList').append(renderWorkouts);
 }
 
 function test(index) {
-	alert('go to page ' + index);
+//	alert('go to page ' + index);
+	tau.changePage('#aboutPage')
 }
