@@ -28,6 +28,7 @@ page.addEventListener('pagebeforeshow', function() {
 var list = document.getElementById('snapList');
 
 if (tau.support.shape.circle) {
+	console.log('createdd', listHelper)
     listHelper = tau.helper.SnapListMarqueeStyle.create(list, {marqueeDelay: 1000});
 }
 });
@@ -35,6 +36,7 @@ if (tau.support.shape.circle) {
 page.addEventListener('pagehide', function() {
 if (tau.support.shape.circle) {
     if (listHelper) {
+    		console.log('desroy')
         listHelper.destroy();
     }
 }
